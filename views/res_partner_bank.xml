@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+
+    <!-- ====================================================================================================  -->
+    <!-- Cuenta Banco - Formulario -->
+    <!-- ====================================================================================================  -->
+    <record id="deysanka_view_partner_bank_form" model="ir.ui.view">
+        <field name="name">deysanka.view.partner.bank.form</field>
+        <field name="model">res.partner.bank</field>
+        <field name="inherit_id" ref="base.view_partner_bank_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='partner_id']" position="after">
+                <field name="description"/>
+            </xpath>
+        </field>
+    </record>
+    <!-- ====================================================================================================  -->
+
+</odoo>
